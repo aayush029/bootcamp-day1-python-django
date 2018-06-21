@@ -1,0 +1,55 @@
+<html>
+<head>
+  <title>my demo</title>
+</head>
+    <body>
+<div class="row">
+    <div class="c1">
+        <section id="myform">
+            <form action="demoview" method="post" class="form">
+                {% csrf_token %}
+
+                <hr />
+                <div class="form-group">
+                    <label for="fname">first name</label>
+                  <input type="text" name="fname">
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">last name</label>
+                        <input type="text" name="lname">
+                        </div>
+                        <div class="form-group">
+                            <labellk for="email">email</label>
+                            <input type="text" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="pno">phone no</label>
+                              <input type="text" name="pno">
+                                </div>
+                                <div class="form-group">
+                                    <label for="country">country</label>
+                                    <input type="text" name="country">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="city">city</label>
+                                        <input type="text" name="city">
+                                        </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="hidden" name="next" value="/" />
+                        <input type="submit" value="Log in" class="btn btn-default" />
+                    </div>
+                </div>
+                {% if form.errors %}
+                <p class="validation-summary-errors">Please enter a correct user name and password.</p>
+                {% endif %}
+            </form>
+        </section>
+    </div>
+    <div class="col-md-4">
+        <section id="socialLoginForm"></section>
+    </div>
+</div>
+<a href="show.html">show details</a>
+</body>
+</html>

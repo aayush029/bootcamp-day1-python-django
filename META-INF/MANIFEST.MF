@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: project-python-django-webapp-master
+Bundle-SymbolicName: project-python-django-webapp-master
+Bundle-Version: 1.0.0.qualifier
